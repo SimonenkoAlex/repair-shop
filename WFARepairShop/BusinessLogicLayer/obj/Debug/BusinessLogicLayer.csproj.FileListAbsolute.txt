@@ -1,0 +1,6 @@
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

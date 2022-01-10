@@ -22,6 +22,7 @@ namespace BusinessLogicLayer
         public string getMastersForRepairDevice(Devices device)
         {
             string surnameAndInitials = "";
+            bool allBusyness = false;
             foreach (Masters master in workers) {
                 if (master.Busyness == true)
                 {
@@ -30,10 +31,13 @@ namespace BusinessLogicLayer
                         + "." + master.Patronymic[0] + ". починит " + device.DevicesName;
                 }
                 else {
-
+                    if (master == workers.Last()) allBusyness = true;
+                    else allBusyness = false;
                 }
             }
-            return surnameAndInitials;
+            if (allBusyness == false)
+                throw new Exception("В данный момент все мастера заняты");
+            else return surnameAndInitials;
         }
     }
 }

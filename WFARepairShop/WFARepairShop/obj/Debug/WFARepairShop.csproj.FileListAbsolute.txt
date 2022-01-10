@@ -1,0 +1,13 @@
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\bin\Debug\WFARepairShop.exe.config
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\bin\Debug\WFARepairShop.exe
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\bin\Debug\WFARepairShop.pdb
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\bin\Debug\BusinessLogicLayer.dll
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\bin\Debug\BusinessLogicLayer.pdb
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.csprojAssemblyReference.cache
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.MainForm.resources
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.Properties.Resources.resources
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.csproj.GenerateResource.cache
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.csproj.CoreCompileInputs.cache
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.csproj.CopyComplete
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.exe
+C:\Program_Project\GitHub\repair-shop\WFARepairShop\WFARepairShop\obj\Debug\WFARepairShop.pdb
