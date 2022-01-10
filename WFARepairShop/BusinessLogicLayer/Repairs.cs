@@ -13,13 +13,20 @@ namespace BusinessLogicLayer
         private List<Masters> workers;
         private Devices device;
 
+        public Repairs() {}
+
         public Repairs(string category, Devices device, double cost) {
             this.category = category;
             this.device = device;
             costRepair = cost;
         }
 
-        public string getMastersForRepairDevice(Devices device)
+        public string Category { get => category; set => category = value; }
+        public double CostRepair { get => costRepair; set => costRepair = value; }
+        public List<Masters> Workers { get => workers; set => workers = value; }
+        public Devices Device { get => device; set => device = value; }
+
+        public string getMastersForRepairDevice()
         {
             string surnameAndInitials = "";
             bool allBusyness = false;
@@ -29,13 +36,14 @@ namespace BusinessLogicLayer
                     master.Busyness = false;
                     surnameAndInitials += master.FirstName + " " + master.SecondName.Substring(0, 1)
                         + "." + master.Patronymic[0] + ". починит " + device.DevicesName;
+                    break;
                 }
                 else {
                     if (master == workers.Last()) allBusyness = true;
                     else allBusyness = false;
                 }
             }
-            if (allBusyness == false)
+            if (allBusyness == true)
                 throw new Exception("В данный момент все мастера заняты");
             else return surnameAndInitials;
         }

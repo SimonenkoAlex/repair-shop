@@ -32,25 +32,25 @@
             this.labDate = new System.Windows.Forms.Label();
             this.labProducer = new System.Windows.Forms.Label();
             this.tBProducer = new System.Windows.Forms.TextBox();
-            this.tBDate = new System.Windows.Forms.TextBox();
             this.tBName = new System.Windows.Forms.TextBox();
             this.labName = new System.Windows.Forms.Label();
             this.labСategory = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cBCategory = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBCost = new System.Windows.Forms.TextBox();
             this.btnAssign = new System.Windows.Forms.Button();
             this.rTBResultAssign = new System.Windows.Forms.RichTextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gBDevices.SuspendLayout();
             this.SuspendLayout();
             // 
             // gBDevices
             // 
             this.gBDevices.BackColor = System.Drawing.SystemColors.Info;
+            this.gBDevices.Controls.Add(this.dateTimePicker1);
             this.gBDevices.Controls.Add(this.labDate);
             this.gBDevices.Controls.Add(this.labProducer);
             this.gBDevices.Controls.Add(this.tBProducer);
-            this.gBDevices.Controls.Add(this.tBDate);
             this.gBDevices.Controls.Add(this.tBName);
             this.gBDevices.Controls.Add(this.labName);
             this.gBDevices.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -88,14 +88,6 @@
             this.tBProducer.Size = new System.Drawing.Size(170, 32);
             this.tBProducer.TabIndex = 1;
             // 
-            // tBDate
-            // 
-            this.tBDate.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tBDate.Location = new System.Drawing.Point(150, 62);
-            this.tBDate.Name = "tBDate";
-            this.tBDate.Size = new System.Drawing.Size(170, 32);
-            this.tBDate.TabIndex = 1;
-            // 
             // tBName
             // 
             this.tBName.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -123,14 +115,14 @@
             this.labСategory.TabIndex = 1;
             this.labСategory.Text = "Категория ремонта";
             // 
-            // comboBox1
+            // cBCategory
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(212, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 28);
-            this.comboBox1.TabIndex = 2;
+            this.cBCategory.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.cBCategory.FormattingEnabled = true;
+            this.cBCategory.Location = new System.Drawing.Point(212, 121);
+            this.cBCategory.Name = "cBCategory";
+            this.cBCategory.Size = new System.Drawing.Size(120, 28);
+            this.cBCategory.TabIndex = 2;
             // 
             // label1
             // 
@@ -142,24 +134,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Стоимость";
             // 
-            // textBox1
+            // tBCost
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
-            this.textBox1.Location = new System.Drawing.Point(455, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 32);
-            this.textBox1.TabIndex = 3;
+            this.tBCost.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.tBCost.Location = new System.Drawing.Point(455, 117);
+            this.tBCost.Name = "tBCost";
+            this.tBCost.Size = new System.Drawing.Size(216, 32);
+            this.tBCost.TabIndex = 3;
             // 
             // btnAssign
             // 
             this.btnAssign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAssign.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAssign.Location = new System.Drawing.Point(472, 161);
+            this.btnAssign.Location = new System.Drawing.Point(472, 155);
             this.btnAssign.Name = "btnAssign";
             this.btnAssign.Size = new System.Drawing.Size(200, 40);
             this.btnAssign.TabIndex = 4;
             this.btnAssign.Text = "Назначить";
             this.btnAssign.UseVisualStyleBackColor = false;
+            this.btnAssign.Click += new System.EventHandler(this.btnAssign_Click);
             // 
             // rTBResultAssign
             // 
@@ -170,6 +163,15 @@
             this.rTBResultAssign.TabIndex = 5;
             this.rTBResultAssign.Text = "";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(150, 62);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(170, 37);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,8 +180,8 @@
             this.ClientSize = new System.Drawing.Size(684, 242);
             this.Controls.Add(this.rTBResultAssign);
             this.Controls.Add(this.btnAssign);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tBCost);
+            this.Controls.Add(this.cBCategory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labСategory);
             this.Controls.Add(this.gBDevices);
@@ -200,13 +202,13 @@
         private System.Windows.Forms.Label labProducer;
         private System.Windows.Forms.TextBox tBProducer;
         private System.Windows.Forms.Label labDate;
-        private System.Windows.Forms.TextBox tBDate;
         private System.Windows.Forms.Label labСategory;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cBCategory;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBCost;
         private System.Windows.Forms.Button btnAssign;
         private System.Windows.Forms.RichTextBox rTBResultAssign;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
