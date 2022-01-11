@@ -35,7 +35,7 @@ namespace BusinessLogicLayer
                 {
                     master.Busyness = false;
                     surnameAndInitials += master.FirstName + " " + master.SecondName.Substring(0, 1)
-                        + "." + master.Patronymic[0] + ". починит " + device.DevicesName;
+                        + "." + master.Patronymic[0] + ". -> " + device.DevicesName;
                     break;
                 }
                 else {

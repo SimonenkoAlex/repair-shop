@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFARepairShop", "WFARepairS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{53CD0A63-C429-42AB-B698-E4F9A36329FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairShop.Tests", "RepairShop.Tests\RepairShop.Tests.csproj", "{1BA84A27-3F4C-4DAF-A39C-4D5154ED05FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{53CD0A63-C429-42AB-B698-E4F9A36329FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53CD0A63-C429-42AB-B698-E4F9A36329FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53CD0A63-C429-42AB-B698-E4F9A36329FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA84A27-3F4C-4DAF-A39C-4D5154ED05FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA84A27-3F4C-4DAF-A39C-4D5154ED05FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA84A27-3F4C-4DAF-A39C-4D5154ED05FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA84A27-3F4C-4DAF-A39C-4D5154ED05FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
